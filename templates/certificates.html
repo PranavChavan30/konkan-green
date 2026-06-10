@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section style="padding:60px 20px;background:#f8fdf8;min-height:80vh;">
+
+```
+<div style="max-width:1000px;margin:auto;">
+
+    <div style="text-align:center;margin-bottom:40px;">
+        <h1 style="color:#2e7d32;font-size:42px;margin-bottom:10px;">
+            Certificates & Compliance
+        </h1>
+
+        <p style="font-size:18px;color:#555;">
+            KONKAN GREEN INDUSTRIES is committed to providing eco-friendly,
+            biodegradable and food-safe paper products.
+        </p>
+    </div>
+
+    <div style="background:white;padding:30px;border-radius:15px;
+                box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+
+        <h2 style="color:#2e7d32;margin-bottom:30px;">
+            Certifications & Licenses
+        </h2>
+
+        <h3 style="margin-bottom:15px;">📄 CPCB Certificate</h3>
+
+        <img src="{{ url_for('static', filename='certificates/cpcb.jpg') }}"
+             alt="CPCB Certificate"
+             style="width:100%;border:1px solid #ddd;
+             border-radius:10px;margin-bottom:40px;">
+
+        <h3 style="margin-bottom:15px;">📄 FSSAI License</h3>
+
+        <img src="{{ url_for('static', filename='certificates/fssai.jpg') }}"
+             alt="FSSAI License"
+             style="width:100%;border:1px solid #ddd;
+             border-radius:10px;margin-bottom:40px;">
+
+        <h3 style="margin-bottom:15px;">📄 Udyam Registration Certificate</h3>
+
+        <img src="{{ url_for('static', filename='certificates/udyam.jpg') }}"
+             alt="Udyam Registration Certificate"
+             style="width:100%;border:1px solid #ddd;
+             border-radius:10px;margin-bottom:40px;">
+
+        <h3 style="margin-bottom:15px;">📄 Food Grade Test Report</h3>
+
+        <img src="{{ url_for('static', filename='certificates/foodgrade.jpg') }}"
+             alt="Food Grade Test Report"
+             style="width:100%;border:1px solid #ddd;
+             border-radius:10px;">
+
+    </div>
+
+    <div style="background:white;padding:30px;border-radius:15px;
+                box-shadow:0 4px 15px rgba(0,0,0,0.08);
+                margin-top:30px;">
+
+        <h2 style="color:#2e7d32;">Company Information</h2>
+
+        <p><strong>Brand Name:</strong> KONKAN GREEN</p>
+
+        <p><strong>Legal Business Name:</strong>
+            KONKAN GREEN INDUSTRIES
+        </p>
+
+        <p><strong>Products:</strong>
+            Eco-Friendly Paper Cups, Paper Dishes,
+            Paper Bowls & Food Packaging Products
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+{% endblock %}
