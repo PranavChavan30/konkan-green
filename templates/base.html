@@ -1,80 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Konkan Green Industries</title>
-
-    <meta name="description"
-          content="Eco-Friendly, Biodegradable and Food Safe Paper Products">
-
-    <link rel="icon"
-          href="{{ url_for('static', filename='favicon.ico') }}">
-
-    <link rel="stylesheet"
-          href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Test</title>
 </head>
-
 <body>
 
-    <div class="navbar">
+<h1>BASE FILE WORKING</h1>
 
-        <div class="logo">
-            <h2>KONKAN GREEN</h2>
-        </div>
-
-        <div class="nav-links">
-            <a href="/">Home</a>
-            <a href="/products">Products</a>
-            <a href="/about">About</a>
-            <a href="/events">Events</a>
-            <a href="/certificates">Certificates</a>
-            <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
-        </div>
-
-    </div>
-
-    <div class="content">
-        {% block content %}{% endblock %}
-    </div>
-
-    <footer>
-
-        <div class="footer-container">
-
-            <div class="footer-section">
-                <h3>KONKAN GREEN INDUSTRIES</h3>
-                <p>
-                    Eco-Friendly, Biodegradable &
-                    Food Safe Paper Products.
-                </p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-
-                <a href="/">Home</a><br>
-                <a href="/products">Products</a><br>
-                <a href="/about">About</a><br>
-                <a href="/certificates">Certificates</a><br>
-                <a href="/contact">Contact</a>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-
-                <p>📞 +91 XXXXXXXXXX</p>
-                <p>✉ info@konkangreen.in</p>
-                <p>📍 Maharashtra, India</p>
-            </div>
-
-        </div>
-
-    </footer>
+{% block content %}{% endblock %}
 
 </body>
-
 </html>
