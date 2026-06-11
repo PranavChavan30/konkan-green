@@ -1,28 +1,155 @@
 {% extends "base.html" %}
 
+{% block title %}
+Home | Konkan Green
+{% endblock %}
+
 {% block content %}
 
 <!-- HERO SECTION -->
-<div class="hero">
-    <div class="overlay">
-        <h1>Compostable by Nature</h1>
-        <h2>Trusted by You</h2>
-        <p>Eco Friendly | Biodegradable | Plastic Free Products</p>
-        <a href="/products" class="btn">Explore Products</a>
+
+<section class="hero">
+
+```
+<div class="overlay">
+
+    <h1>Safe for You, Safe for Earth</h1>
+
+    <h2>Eco-Friendly Packaging Solutions</h2>
+
+    <p>
+        Sustainable, Biodegradable and Plastic-Free
+        alternatives for a greener future.
+    </p>
+
+    <a href="/products" class="btn">
+        Explore Products
+    </a>
+
+</div>
+```
+
+</section>
+
+<!-- ABOUT PREVIEW -->
+
+<section class="about-preview">
+
+```
+<h2>Welcome to Konkan Green</h2>
+
+<p>
+    Konkan Green is committed to promoting eco-friendly
+    and sustainable alternatives to single-use plastic products.
+    Our goal is to encourage responsible choices that help
+    protect our environment for future generations.
+</p>
+
+<a href="/about">
+    Learn More
+</a>
+```
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why-us">
+
+```
+<h2>Why Choose Konkan Green?</h2>
+
+<div class="features">
+
+    <div class="feature">
+        <h3>Eco-Friendly</h3>
+        <p>
+            Designed with sustainability in mind.
+        </p>
     </div>
+
+    <div class="feature">
+        <h3>Biodegradable</h3>
+        <p>
+            Products that naturally break down and reduce waste.
+        </p>
+    </div>
+
+    <div class="feature">
+        <h3>Plastic-Free</h3>
+        <p>
+            Better alternatives for a cleaner environment.
+        </p>
+    </div>
+
+    <div class="feature">
+        <h3>Food Safe</h3>
+        <p>
+            Suitable for everyday food and beverage use.
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- PRODUCTS PREVIEW -->
+
+<section class="products-preview">
+
+```
+<h2>Our Products</h2>
+
+<div class="product-list">
+
+    <div class="product-card">
+        <h3>Paper Cups</h3>
+        <p>
+            Eco-friendly cups for tea, coffee and beverages.
+        </p>
+    </div>
+
+    <div class="product-card">
+        <h3>Paper Plates</h3>
+        <p>
+            Sustainable plates for events and daily use.
+        </p>
+    </div>
+
+    <div class="product-card">
+        <h3>Food Packaging</h3>
+        <p>
+            Responsible packaging solutions for food businesses.
+        </p>
+    </div>
+
 </div>
 
-<!-- BRANDS -->
-<div class="brands">
-    <div class="brand">
-        <h2>Eco Konkan</h2>
-        <p>Specially designed for Konkan region eco needs</p>
-    </div>
+<a href="/products" class="btn">
+    View All Products
+</a>
+```
 
-    <div class="brand">
-        <h2>GreenNex</h2>
-        <p>Serving eco-friendly products all across India</p>
-    </div>
-</div>
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+```
+<h2>Join the Green Movement</h2>
+
+<p>
+    Together we can reduce plastic waste and create
+    a more sustainable future.
+</p>
+
+<a href="/contact" class="btn">
+    Contact Us
+</a>
+```
+
+</section>
 
 {% endblock %}

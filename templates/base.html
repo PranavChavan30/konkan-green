@@ -2,84 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Konkan Green Industries</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}Konkan Green{% endblock %}
+    </title>
 
     <meta name="description"
-          content="Eco-Friendly, Biodegradable and Food Safe Paper Products">
+          content="Eco-Friendly, Biodegradable and Plastic-Free Food Packaging Solutions">
 
     <link rel="icon"
           href="{{ url_for('static', filename='favicon.ico') }}">
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
 
-    <div class="navbar">
+    {% include 'includes/header.html' %}
 
-        <div class="logo">
-            <h2>KONKAN GREEN</h2>
-        </div>
+    <main>
 
-        <div class="nav-links">
-            <a href="/">Home</a>
-            <a href="/products">Products</a>
-            <a href="/about">About</a>
-            <a href="/events">Events</a>
-            <a href="/certificates">Certificates</a>
-            <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
-        </div>
+        {% block content %}
+        {% endblock %}
 
-    </div>
+    </main>
 
-    <div class="content">
-        {% block content %}{% endblock %}
-    </div>
-
-    <footer>
-
-        <div class="footer-container">
-
-            <div style="
-        background:white;
-        padding:30px;
-        border-radius:15px;
-        box-shadow:0 4px 15px rgba(0,0,0,0.08);
-    ">
-
-        <h2 style="color:#2e7d32;">
-            KONKAN GREEN INDUSTRIES
-        </h2>
-
-        <p>
-            Manufacturer of Eco-Friendly, Biodegradable and
-            Food Safe Paper Products.
-        </p>
-
-        <p>
-            Our products are designed to support sustainable
-            packaging solutions while maintaining food safety
-            and environmental responsibility.
-        </p>
-
-        <hr style="margin:20px 0;border:none;border-top:1px solid #ddd;">
-
-        <p><strong>Brand Name:</strong> KONKAN GREEN</p>
-
-        <p><strong>Business Name:</strong> KONKAN GREEN INDUSTRIES</p>
-
-        <p><strong>Website:</strong> https://konkangreen.in</p>
-
-    </div>
-
-        </div>
-
-    </footer>
+    {% include 'includes/footer.html' %}
 
 </body>
 

@@ -1,6 +1,144 @@
 {% extends "base.html" %}
+
+{% block title %}
+Contact Us | Konkan Green
+{% endblock %}
+
 {% block content %}
 
-<h1>Page Working ✅</h1>
+<section class="contact-page">
+
+```
+<div class="container">
+
+    <!-- Page Header -->
+
+    <div class="page-header">
+
+        <h1>Contact Us</h1>
+
+        <p>
+            We would love to hear from you. Reach out to us for
+            product inquiries, partnerships, bulk orders and
+            business collaborations.
+        </p>
+
+    </div>
+
+    <!-- Contact Information -->
+
+    <div class="contact-info">
+
+        <h2>Contact Information</h2>
+
+        <p>
+            <strong>Brand:</strong> Konkan Green
+        </p>
+
+        <p>
+            <strong>Location:</strong> Maharashtra, India
+        </p>
+
+        <p>
+            <strong>Website:</strong> konkangreen.in
+        </p>
+
+    </div>
+
+    <!-- Contact Form -->
+
+    <div class="contact-form">
+
+        <h2>Send Us a Message</h2>
+
+        <form method="POST">
+
+            <div>
+
+                <label>Your Name</label>
+
+                <input type="text"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
+
+            </div>
+
+            <div>
+
+                <label>Email Address</label>
+
+                <input type="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+            </div>
+
+            <div>
+
+                <label>Subject</label>
+
+                <input type="text"
+                       name="subject"
+                       placeholder="Enter subject">
+
+            </div>
+
+            <div>
+
+                <label>Message</label>
+
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message here..."
+                    required></textarea>
+
+            </div>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- Business Enquiries -->
+
+    <div class="business-section">
+
+        <h2>Business Enquiries</h2>
+
+        <p>
+            For product information, bulk orders,
+            distribution opportunities and business
+            collaborations, please contact us using
+            the form above.
+        </p>
+
+    </div>
+
+    <!-- Future Map Section -->
+
+    <div class="location-section">
+
+        <h2>Our Location</h2>
+
+        <p>
+            Maharashtra, India
+        </p>
+
+        <p>
+            Google Maps integration will be added soon.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
 
 {% endblock %}

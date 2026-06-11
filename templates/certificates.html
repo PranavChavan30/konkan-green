@@ -1,117 +1,96 @@
 {% extends "base.html" %}
 
+{% block title %}
+Certificates | Konkan Green
+{% endblock %}
+
 {% block content %}
 
-<section style="padding:60px 20px;background:#f8fdf8;min-height:80vh;">
+<section class="certificates-page">
 
-<div style="max-width:1000px;margin:auto;">
+```
+<div class="container">
 
-    <div style="text-align:center;margin-bottom:40px;">
+    <div class="page-header">
 
-        <h1 style="color:#2e7d32;font-size:42px;margin-bottom:10px;">
-            Certificates & Compliance
-        </h1>
+        <h1>Certificates & Compliance</h1>
 
-        <p style="font-size:18px;color:#555;">
-            Official certifications, licenses and compliance documents of
-            KONKAN GREEN INDUSTRIES.
+        <p>
+            Konkan Green is committed to promoting sustainable,
+            eco-friendly and responsible packaging solutions.
         </p>
 
     </div>
 
-    <div style="
-        background:white;
-        padding:30px;
-        border-radius:15px;
-        box-shadow:0 4px 15px rgba(0,0,0,0.08);
-        margin-bottom:30px;
-    ">
 
-        <h2 style="color:#2e7d32;margin-bottom:25px;">
-            Available Certifications
-        </h2>
+    <!-- Future Certifications -->
 
-        <div style="
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-            gap:12px;
-            line-height:1.8;
-            color:#444;
-        ">
+    <div class="certificate-section">
 
-            <div>✅ CPCB Certificate</div>
-            <div>✅ CIPET ISO 17088 Certificate</div>
+        <h2>Our Commitment</h2>
 
-            <div>✅ EN 13432 Certificate</div>
-            <div>✅ AS 5810 Certificate</div>
-
-            <div>✅ FSC Chain of Custody</div>
-            <div>✅ FSSAI Food Safety Certificate</div>
-
-            <div>✅ BRC Certificate</div>
-            <div>✅ SMETA SEDEX 4 Pillar Audit</div>
-
-            <div>✅ ISO 9001:2015</div>
-            <div>✅ FDA Certificate</div>
-
-            <div>✅ Food Safety Certificate (EU)</div>
-            <div>✅ Food Safety Certificate (US)</div>
-
-            <div>✅ Food Safety Certificate (INT)</div>
-            <div>✅ ASTM 6400</div>
-
-            <div>✅ ASTM D5511</div>
-            <div>✅ Migration Test Report</div>
-
-            <div>✅ Microwave Migration Test Report</div>
-
-        </div>
+        <p>
+            We focus on environmentally responsible products and
+            continuously work towards meeting industry standards
+            related to sustainability, food safety and quality.
+        </p>
 
     </div>
 
-    <div style="
-        background:white;
-        padding:30px;
-        border-radius:15px;
-        box-shadow:0 4px 15px rgba(0,0,0,0.08);
-        margin-bottom:30px;
-    ">
 
-        <h2 style="color:#2e7d32;margin-bottom:25px;">
-            Official Documents
-        </h2>
+    <!-- Certifications Status -->
 
-        <div style="display:flex;flex-direction:column;gap:15px;">
+    <div class="certificate-section">
 
-            <a href="{{ url_for('static', filename='certificates/cpcb.pdf') }}"
-               target="_blank"
-               style="text-decoration:none;color:#333;border:1px solid #ddd;padding:18px;border-radius:10px;font-weight:600;">
-                📄 View CPCB Certificate
-            </a>
+        <h2>Certification Status</h2>
 
-            <a href="{{ url_for('static', filename='certificates/fssai.pdf') }}"
-               target="_blank"
-               style="text-decoration:none;color:#333;border:1px solid #ddd;padding:18px;border-radius:10px;font-weight:600;">
-                📄 View FSSAI License
-            </a>
+        <ul>
 
-            <a href="{{ url_for('static', filename='certificates/udyam.pdf') }}"
-               target="_blank"
-               style="text-decoration:none;color:#333;border:1px solid #ddd;padding:18px;border-radius:10px;font-weight:600;">
-                📄 View Udyam Registration Certificate
-            </a>
+            <li>
+                Sustainable Packaging Standards
+                <strong>(In Progress)</strong>
+            </li>
 
-            <a href="{{ url_for('static', filename='certificates/foodgrade.pdf') }}"
-               target="_blank"
-               style="text-decoration:none;color:#333;border:1px solid #ddd;padding:18px;border-radius:10px;font-weight:600;">
-                📄 View Food Grade Test Report
-            </a>
+            <li>
+                Food Contact Safety Compliance
+                <strong>(Planned)</strong>
+            </li>
 
-        </div>
+            <li>
+                Eco-Friendly Product Verification
+                <strong>(Planned)</strong>
+            </li>
+
+            <li>
+                Quality Management Certification
+                <strong>(Future Goal)</strong>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Verification -->
+
+    <div class="certificate-section">
+
+        <h2>Certificate Verification</h2>
+
+        <p>
+            Once official certifications are issued,
+            visitors will be able to verify certificates
+            through our online verification system.
+        </p>
+
+        <a href="/verify">
+            Verify Certificate
+        </a>
 
     </div>
 
 </div>
+```
 
 </section>
 
