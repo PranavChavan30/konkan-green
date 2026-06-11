@@ -4,78 +4,188 @@
 
 <section style="padding:60px 20px;background:#f8fdf8;min-height:80vh;">
 
-```
 <div style="max-width:1000px;margin:auto;">
 
-    <div style="text-align:center;margin-bottom:40px;">
-        <h1 style="color:#2e7d32;font-size:42px;margin-bottom:10px;">
-            Certificates & Compliance
-        </h1>
+```
+<!-- Header -->
 
-        <p style="font-size:18px;color:#555;">
-            KONKAN GREEN INDUSTRIES is committed to providing eco-friendly,
-            biodegradable and food-safe paper products.
-        </p>
-    </div>
+<div style="text-align:center;margin-bottom:40px;">
 
-    <div style="background:white;padding:30px;border-radius:15px;
-                box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+    <h1 style="color:#2e7d32;font-size:42px;margin-bottom:10px;">
+        Certificates & Compliance
+    </h1>
 
-        <h2 style="color:#2e7d32;margin-bottom:30px;">
-            Certifications & Licenses
-        </h2>
+    <p style="font-size:18px;color:#555;">
+        Official certifications, licenses and compliance documents of
+        KONKAN GREEN INDUSTRIES.
+    </p>
 
-        <h3 style="margin-bottom:15px;">📄 CPCB Certificate</h3>
+</div>
 
-        <img src="{{ url_for('static', filename='certificates/cpcb.jpg') }}"
-             alt="CPCB Certificate"
-             style="width:100%;border:1px solid #ddd;
-             border-radius:10px;margin-bottom:40px;">
+<!-- Available Certifications -->
 
-        <h3 style="margin-bottom:15px;">📄 FSSAI License</h3>
+<div style="
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+">
 
-        <img src="{{ url_for('static', filename='certificates/fssai.jpg') }}"
-             alt="FSSAI License"
-             style="width:100%;border:1px solid #ddd;
-             border-radius:10px;margin-bottom:40px;">
+    <h2 style="color:#2e7d32;margin-bottom:25px;">
+        Available Certifications
+    </h2>
 
-        <h3 style="margin-bottom:15px;">📄 Udyam Registration Certificate</h3>
+    <div style="
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+        gap:12px;
+        line-height:1.8;
+        color:#444;
+    ">
 
-        <img src="{{ url_for('static', filename='certificates/udyam.jpg') }}"
-             alt="Udyam Registration Certificate"
-             style="width:100%;border:1px solid #ddd;
-             border-radius:10px;margin-bottom:40px;">
+        <div>✅ CPCB Certificate</div>
+        <div>✅ CIPET ISO 17088 Certificate</div>
 
-        <h3 style="margin-bottom:15px;">📄 Food Grade Test Report</h3>
+        <div>✅ EN 13432 Certificate</div>
+        <div>✅ AS 5810 Certificate</div>
 
-        <img src="{{ url_for('static', filename='certificates/foodgrade.jpg') }}"
-             alt="Food Grade Test Report"
-             style="width:100%;border:1px solid #ddd;
-             border-radius:10px;">
+        <div>✅ FSC Chain of Custody</div>
+        <div>✅ FSSAI Food Safety Certificate</div>
 
-    </div>
+        <div>✅ BRC Certificate</div>
+        <div>✅ SMETA SEDEX 4 Pillar Audit</div>
 
-    <div style="background:white;padding:30px;border-radius:15px;
-                box-shadow:0 4px 15px rgba(0,0,0,0.08);
-                margin-top:30px;">
+        <div>✅ ISO 9001:2015</div>
+        <div>✅ FDA Certificate</div>
 
-        <h2 style="color:#2e7d32;">Company Information</h2>
+        <div>✅ Food Safety Certificate (EU)</div>
+        <div>✅ Food Safety Certificate (US)</div>
 
-        <p><strong>Brand Name:</strong> KONKAN GREEN</p>
+        <div>✅ Food Safety Certificate (INT)</div>
+        <div>✅ ASTM 6400</div>
 
-        <p><strong>Legal Business Name:</strong>
-            KONKAN GREEN INDUSTRIES
-        </p>
+        <div>✅ ASTM D5511</div>
+        <div>✅ Migration Test Report</div>
 
-        <p><strong>Products:</strong>
-            Eco-Friendly Paper Cups, Paper Dishes,
-            Paper Bowls & Food Packaging Products
-        </p>
+        <div>✅ Microwave Migration Test Report</div>
 
     </div>
 
 </div>
+
+<!-- Official Documents -->
+
+<div style="
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+">
+
+    <h2 style="color:#2e7d32;margin-bottom:25px;">
+        Official Documents
+    </h2>
+
+    <div style="display:flex;flex-direction:column;gap:15px;">
+
+        <a href="{{ url_for('static', filename='certificates/cpcb.pdf') }}"
+           target="_blank"
+           style="
+           text-decoration:none;
+           color:#333;
+           border:1px solid #ddd;
+           padding:18px;
+           border-radius:10px;
+           font-weight:600;
+           ">
+            📄 View CPCB Certificate
+        </a>
+
+        <a href="{{ url_for('static', filename='certificates/fssai.pdf') }}"
+           target="_blank"
+           style="
+           text-decoration:none;
+           color:#333;
+           border:1px solid #ddd;
+           padding:18px;
+           border-radius:10px;
+           font-weight:600;
+           ">
+            📄 View FSSAI License
+        </a>
+
+        <a href="{{ url_for('static', filename='certificates/udyam.pdf') }}"
+           target="_blank"
+           style="
+           text-decoration:none;
+           color:#333;
+           border:1px solid #ddd;
+           padding:18px;
+           border-radius:10px;
+           font-weight:600;
+           ">
+            📄 View Udyam Registration Certificate
+        </a>
+
+        <a href="{{ url_for('static', filename='certificates/foodgrade.pdf') }}"
+           target="_blank"
+           style="
+           text-decoration:none;
+           color:#333;
+           border:1px solid #ddd;
+           padding:18px;
+           border-radius:10px;
+           font-weight:600;
+           ">
+            📄 View Food Grade Test Report
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Company Information -->
+
+<div style="
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+">
+
+    <h2 style="color:#2e7d32;">
+        KONKAN GREEN INDUSTRIES
+    </h2>
+
+    <p>
+        Manufacturer of Eco-Friendly, Biodegradable and
+        Food Safe Paper Products.
+    </p>
+
+    <p>
+        Our products are designed to support sustainable
+        packaging solutions while maintaining food safety
+        and environmental responsibility.
+    </p>
+
+    <hr style="margin:20px 0;border:none;border-top:1px solid #ddd;">
+
+    <p><strong>Brand Name:</strong> KONKAN GREEN</p>
+
+    <p><strong>Business Name:</strong>
+        KONKAN GREEN INDUSTRIES
+    </p>
+
+    <p><strong>Website:</strong>
+        https://konkangreen.in
+    </p>
+
+</div>
 ```
+
+</div>
 
 </section>
 

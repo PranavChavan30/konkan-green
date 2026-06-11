@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
-    <title>Konkan Eco Ventures</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Konkan Green Industries</title>
+
+<meta name="description"
+      content="Eco-Friendly, Biodegradable and Food Safe Paper Products">
+
+<link rel="icon"
+      href="{{ url_for('static', filename='favicon.ico') }}">
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+```
+
 </head>
 
 <body>
 
+```
 <div class="navbar">
-    <h2>Konkan Eco</h2>
+
+    <div class="logo">
+        <h2>KONKAN GREEN</h2>
+    </div>
 
     <div class="nav-links">
         <a href="/">Home</a>
@@ -19,11 +39,49 @@
         <a href="/blog">Blog</a>
         <a href="/contact">Contact</a>
     </div>
+
 </div>
 
 <div class="content">
     {% block content %}{% endblock %}
 </div>
 
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>KONKAN GREEN INDUSTRIES</h3>
+            <p>
+                Eco-Friendly, Biodegradable &
+                Food Safe Paper Products.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+
+            <a href="/">Home</a>
+            <a href="/products">Products</a>
+            <a href="/certificates">Certificates</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+
+            <p>📞 +91 XXXXXXXXXX</p>
+            <p>✉ info@konkangreen.in</p>
+            <p>📍 Maharashtra, India</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 KONKAN GREEN INDUSTRIES. All Rights Reserved.
+    </div>
+</footer>
+```
+
 </body>
+
 </html>
